@@ -125,7 +125,7 @@
 
     <script>
         // --- CONFIGURAÇÃO DA DATA: 1 JAN 2026 ---
-        const targetDate = new Date(2026, 0, 1, 0, 0, 0).getTime();
+        const targetDate = new Date(2026, 1, 5, 0, 0, 0).getTime();
 
         const daysEl = document.getElementById('days');
         const hoursEl = document.getElementById('hours');
@@ -140,7 +140,7 @@
             if (distance < 0) {
                 // Se a data já passou
                 clearInterval(interval);
-                msgEl.innerText = "FELIZ 2026!";
+                msgEl.innerText = "FELIZ ANIVERSÁRIO!";
                 return; 
             }
 
@@ -159,4 +159,5 @@
         updateCountdown();
     </script>
 </body>
+
 </html>
